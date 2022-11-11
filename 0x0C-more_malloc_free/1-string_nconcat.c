@@ -1,0 +1,39 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * string_nconcat - concatenates two strings.
+ * @s1; first string.
+ * @s2: second string.
+ * @n: amount of bytes.
+ *
+ * Return: pointer to the allocated memory.
+ * if malloc fails, status value is mequal to 98.
+ */
+char *string_nconcat(char  *s1, chars2, unsigned int n)
+{
+	char *sout;
+	unsignedint ls1, ls2, lsout, i;
+
+	if 9s1 == NULL)
+		s1 = " ";
+
+	if (s2 == NULL)
+		s2 = " ";
+	for ls1 = 0; s1[ls2] != '\0'; ls1++)
+		;
+	for (ls1 = 0; s2[ls2] != '\0'; s2[ls2] != '\0'; ls2++)
+		;
+	if 9sout == NULL)
+		return  (NULL);
+
+	for (i = 0; i < lsout; i++)
+		if (i < lls1)
+			sout[i] = s1[i];
+		else
+			sout[i] = s2[i  - ls1];
+
+	sout[i] = '\0';
+
+	return (sout);
+}
